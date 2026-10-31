@@ -1,0 +1,1404 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Seven Day Knowledge Challenge</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+header {
+    background: #17243b;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 5px;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 75px);
+}
+
+/* LEFT READING PANEL */
+
+.left {
+    width: 40%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 25px;
+    background: #e8eef7;
+    border-right: 2px solid #bbb;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.left h2 {
+    color: #17243b;
+    border-bottom: 2px solid #17243b;
+    padding-bottom: 8px;
+}
+
+.left h3 {
+    color: #174b79;
+    margin-top: 25px;
+}
+
+.left p {
+    line-height: 1.8;
+    text-align: justify;
+    color: #222;
+}
+
+.left h4 {
+    color: #34495e;
+}
+
+/* RIGHT WRITING PANEL */
+
+.right {
+    width: 60%;
+    height: 100%;
+    padding: 20px;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.right h2 {
+    margin-top: 0;
+    color: #17243b;
+}
+
+/* PAGE NAVIGATION */
+
+.page-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.page-controls button {
+    padding: 9px 15px;
+    background: #17243b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.page-controls button:hover {
+    background: #3269a8;
+}
+
+.page-controls button:disabled {
+    background: #999;
+    cursor: not-allowed;
+}
+
+/* WRITING PAGES */
+
+#pagesContainer {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.note-page {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    background: white;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    overflow-y: auto;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    outline: none;
+}
+
+.note-page:focus {
+    border: 2px solid #3269a8;
+}
+
+#status {
+    color: green;
+    font-size: 13px;
+    padding-top: 8px;
+    flex-shrink: 0;
+}
+
+/* MOBILE VIEW */
+
+@media(max-width: 700px) {
+
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left {
+        width: 100%;
+        height: 55vh;
+        border-right: none;
+        border-bottom: 2px solid #bbb;
+    }
+
+    .right {
+        width: 100%;
+        height: 75vh;
+        padding: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>7-Day Mixed Knowledge Challenge</h1>
+    <p>Knowledge • Research • Learning • Development</p>
+</header>
+
+<div class="container">
+
+<!-- LEFT SIDE READING MATERIAL -->
+
+<div class="left" id="reading">
+
+<h2>YOUR KNOWLEDGE LIBRARY</h2>
+
+<p>
+Welcome to the Seven-Day Mixed Knowledge Challenge.
+This reading library covers different areas of human knowledge,
+including science, history, economics, technology, geography,
+psychology, philosophy and environmental studies.
+The purpose of this programme is to develop a deeper
+understanding of the world through consistent reading,
+analysis and independent note-taking.
+</p>
+
+<h3>DAY 1: HISTORY AND THE DEVELOPMENT OF CIVILIZATION</h3>
+
+<h4>1. The Beginning of Human Civilization</h4>
+
+<p>
+Human civilization developed over thousands of years through
+the gradual transformation of small hunting and gathering
+communities into permanent agricultural settlements.
+Early humans depended heavily on natural resources, seasonal
+changes and their ability to adapt to different environments.
+The development of tools, controlled fire, communication and
+cooperation played an important role in human survival.
+</p>
+
+<p>
+The agricultural revolution changed the structure of human
+society. People began cultivating crops and domesticating
+animals, which allowed them to produce food in larger
+quantities. Permanent settlements gradually developed into
+villages, towns and eventually cities. Food surpluses supported
+specialized occupations, trade, administration and organized
+religious practices.
+</p>
+
+<h4>2. Ancient Mesopotamia</h4>
+
+<p>
+Mesopotamia developed between the Tigris and Euphrates rivers
+in the region of present-day Iraq and surrounding areas.
+It is widely recognized as one of the earliest centres of
+urban civilization. The region supported agricultural
+production through irrigation systems and developed important
+urban settlements such as Uruk and Ur.
+</p>
+
+<p>
+The Sumerians contributed significantly to writing,
+mathematics, administration and urban organization.
+Cuneiform, one of the earliest known writing systems,
+was used to record commercial transactions, administrative
+information and literary works. Written records made it
+possible to preserve information and organize increasingly
+complex societies.
+</p>
+
+<h4>3. Ancient Egyptian Civilization</h4>
+
+<p>
+Ancient Egyptian civilization developed along the Nile River.
+The annual flooding of the Nile deposited fertile soil,
+supporting agriculture and population growth. Egyptian society
+was organized under powerful rulers known as pharaohs.
+Political authority, religious beliefs and economic activity
+were closely connected.
+</p>
+
+<p>
+Egyptians developed sophisticated architectural techniques
+and constructed monumental structures, including pyramids
+and temples. Their achievements also included advances in
+mathematics, medicine, astronomy and record keeping.
+Hieroglyphic writing provided a system for recording
+religious, political and cultural information.
+</p>
+
+<h4>4. The Indus Valley Civilization</h4>
+
+<p>
+The Indus Valley Civilization flourished in parts of
+present-day Pakistan and northwestern India during the
+third millennium BCE. Major urban centres included
+Harappa and Mohenjo-daro. These cities demonstrate
+remarkable planning, including organized streets,
+drainage networks, residential buildings and standardized
+construction materials.
+</p>
+
+<p>
+The civilization participated in long-distance trade
+and developed systems of measurement and craft production.
+Its writing system remains undeciphered, which limits
+modern understanding of its political institutions,
+language and religious practices. Archaeological evidence
+continues to provide important information about its society.
+</p>
+
+<h4>5. Ancient Greek Civilization</h4>
+
+<p>
+Ancient Greece made important contributions to philosophy,
+politics, mathematics, science, literature and art.
+Greek city-states developed different political systems.
+Athens became associated with an early form of direct
+democracy, although political participation was restricted
+to a limited section of the population.
+</p>
+
+<p>
+Philosophers such as Socrates, Plato and Aristotle explored
+questions about knowledge, ethics, government and reality.
+Their methods of questioning, observation and logical
+reasoning influenced later intellectual traditions.
+Greek mathematics and scientific ideas also shaped the
+development of education in later civilizations.
+</p>
+
+<h4>6. The Roman Empire</h4>
+
+<p>
+Rome developed from a small settlement into a powerful
+political and military system. Roman institutions included
+republican government, elected magistrates and a senate.
+Later, the Roman Empire controlled extensive territories
+across Europe, North Africa and western Asia.
+</p>
+
+<p>
+Roman engineering produced roads, bridges, aqueducts,
+amphitheatres and large public buildings. Roman law and
+administrative institutions influenced many later legal
+and political systems. The western Roman Empire declined
+in the fifth century CE, while the eastern Roman Empire
+continued for many centuries.
+</p>
+
+<h3>DAY 2: SCIENCE, PHYSICS AND BIOLOGY</h3>
+
+<h4>1. Understanding the Scientific Method</h4>
+
+<p>
+Science is a systematic approach to understanding the
+natural world through observation, experimentation,
+measurement and logical analysis. Scientific explanations
+are developed using evidence rather than relying solely
+on tradition, personal belief or speculation.
+</p>
+
+<p>
+The scientific method commonly involves identifying a
+problem, developing a hypothesis, designing an experiment,
+collecting observations and evaluating results. Scientific
+conclusions remain open to revision when new evidence
+becomes available. Reproducibility and independent
+verification are important features of reliable research.
+</p>
+
+<h4>2. Fundamental Concepts of Physics</h4>
+
+<p>
+Physics studies matter, energy, motion, forces and the
+fundamental interactions of nature. Classical mechanics
+explains how objects move under the influence of forces.
+Newton's laws of motion provide a mathematical framework
+for analysing many everyday physical situations.
+</p>
+
+<p>
+The first law describes inertia, the tendency of an object
+to maintain its state of rest or uniform motion unless
+acted upon by an external net force. The second law relates
+net force, mass and acceleration. The third law states
+that interacting bodies exert equal and opposite forces
+on one another.
+</p>
+
+<h4>3. Electricity and Magnetism</h4>
+
+<p>
+Electricity is associated with electric charge and its
+movement. Electric current describes the rate at which
+electric charge passes through a conductor. Voltage
+represents electric potential difference, while resistance
+describes opposition to current flow.
+</p>
+
+<p>
+Magnetism is associated with moving electric charges
+and magnetic materials. Electricity and magnetism are
+closely connected and are described together through
+electromagnetic theory. These principles support the
+operation of electric motors, generators, transformers
+and many communication technologies.
+</p>
+
+<h4>4. Chemistry and the Structure of Matter</h4>
+
+<p>
+Chemistry studies the composition, properties and
+transformations of matter. All ordinary matter is made from
+atoms, which contain protons, neutrons and electrons.
+The number of protons determines the chemical identity
+of an element.
+</p>
+
+<p>
+Atoms can combine through chemical bonds to form molecules
+and compounds. Chemical reactions involve the rearrangement
+of atoms and the breaking or formation of chemical bonds.
+The periodic table organizes elements according to their
+atomic numbers and recurring chemical properties.
+</p>
+
+<h4>5. Human Biology</h4>
+
+<p>
+The human body is an interconnected biological system
+composed of cells, tissues, organs and organ systems.
+Each system performs specialized functions while
+maintaining coordination with other systems.
+</p>
+
+<p>
+The cardiovascular system circulates blood, delivering
+oxygen and nutrients to tissues. The respiratory system
+supports gas exchange. The digestive system breaks down
+food and absorbs nutrients. The nervous system processes
+information and coordinates responses.
+</p>
+
+<h4>6. Genetics and Evolution</h4>
+
+<p>
+Genetics studies heredity and variation in living organisms.
+DNA stores biological information using sequences of
+chemical bases. Genes are sections of DNA that contribute
+to the production of functional biological molecules.
+</p>
+
+<p>
+Evolution describes changes in inherited characteristics
+of populations over generations. Natural selection can
+increase the frequency of traits that improve reproductive
+success in particular environments. Mutation, genetic drift
+and gene flow also contribute to evolutionary change.
+</p>
+
+<h3>DAY 3: TECHNOLOGY AND ARTIFICIAL INTELLIGENCE</h3>
+
+<h4>1. The Development of Computing</h4>
+
+<p>
+Computing has evolved from mechanical calculating devices
+to electronic computers capable of processing enormous
+amounts of information. Early electronic computers were
+large, expensive and limited in their capabilities.
+Advances in semiconductor technology made it possible
+to construct smaller and more powerful machines.
+</p>
+
+<p>
+Modern computers use processors to execute instructions,
+memory to store information and storage devices to retain
+data. Operating systems coordinate hardware and software,
+manage files and provide interfaces through which people
+interact with machines.
+</p>
+
+<h4>2. Artificial Intelligence</h4>
+
+<p>
+Artificial intelligence is a field of computer science
+concerned with creating systems capable of performing
+tasks that normally require aspects of human intelligence.
+Examples include language processing, image recognition,
+planning, classification and decision support.
+</p>
+
+<p>
+Machine learning is a major area of artificial intelligence.
+Instead of relying exclusively on manually written rules,
+machine learning systems identify patterns from data.
+Training involves adjusting model parameters to improve
+performance on a particular task.
+</p>
+
+<h4>3. Deep Learning and Neural Networks</h4>
+
+<p>
+Deep learning uses artificial neural networks containing
+multiple computational layers. These systems can learn
+complex representations from large datasets. They are
+widely used in speech recognition, image processing,
+translation and scientific research.
+</p>
+
+<p>
+However, machine learning systems can make mistakes.
+Their performance depends on training data, model design,
+evaluation methods and the conditions in which they are
+used. Biased or incomplete datasets can produce unreliable
+or unfair outcomes.
+</p>
+
+<h4>4. Cybersecurity</h4>
+
+<p>
+Cybersecurity involves protecting computer systems,
+networks, applications and information from unauthorized
+access, disruption and damage. Common threats include
+malware, phishing, ransomware, credential theft and
+software vulnerabilities.
+</p>
+
+<p>
+Strong security practices include using unique passwords,
+multi-factor authentication, software updates, encrypted
+communication and regular backups. Organizations also
+need access controls, incident response plans and
+employee security awareness programmes.
+</p>
+
+<h4>5. The Internet and Cloud Computing</h4>
+
+<p>
+The internet is a global network of interconnected
+computer networks. Communication takes place through
+standardized protocols that allow different systems
+to exchange information.
+</p>
+
+<p>
+Cloud computing provides access to computing resources
+such as storage, databases, servers and software through
+network-based services. It allows organizations to scale
+resources according to demand without maintaining all
+their own physical infrastructure.
+</p>
+
+<h4>6. Robotics and Automation</h4>
+
+<p>
+Robotics combines mechanical engineering, electronics,
+control systems and computer science. Robots can perform
+tasks in manufacturing, healthcare, agriculture, logistics
+and scientific exploration.
+</p>
+
+<p>
+Automation can improve consistency and productivity,
+but it can also change employment patterns and the
+skills required in different industries. Responsible
+implementation requires consideration of safety,
+worker training, accountability and economic impact.
+</p>
+
+<h3>DAY 4: GEOGRAPHY AND ENVIRONMENT</h3>
+
+<h4>1. Structure of Planet Earth</h4>
+
+<p>
+Earth consists of several major internal layers.
+The crust forms the outer solid surface, the mantle
+contains hot rock that can deform over geological
+timescales, and the core consists primarily of iron
+and nickel. The outer core is liquid, while the inner
+core is solid.
+</p>
+
+<p>
+The movement of tectonic plates influences earthquakes,
+volcanic activity, mountain formation and ocean basin
+development. Plate tectonics provides a unifying
+explanation for many geological features of the planet.
+</p>
+
+<h4>2. Climate and Weather</h4>
+
+<p>
+Weather describes short-term atmospheric conditions,
+including temperature, rainfall, wind and humidity.
+Climate describes long-term patterns and averages
+in atmospheric conditions across particular regions.
+</p>
+
+<p>
+Solar energy, atmospheric circulation, ocean currents,
+landforms and vegetation all influence climate.
+Different regions experience different climatic conditions
+because of their geographical position and environmental
+characteristics.
+</p>
+
+<h4>3. Global Warming and Climate Change</h4>
+
+<p>
+The greenhouse effect is a natural process in which
+certain atmospheric gases absorb and re-emit infrared
+radiation. This process helps maintain temperatures
+suitable for life on Earth.
+</p>
+
+<p>
+Human activities, particularly the burning of fossil
+fuels, deforestation and industrial processes, have
+increased concentrations of greenhouse gases.
+This has strengthened the greenhouse effect and
+contributed to global warming.
+</p>
+
+<p>
+Consequences include rising average temperatures,
+changes in rainfall patterns, melting glaciers,
+sea-level rise and increased risks from certain
+extreme weather events. Climate adaptation and
+emissions reduction are important responses.
+</p>
+
+<h4>4. Biodiversity and Ecosystems</h4>
+
+<p>
+Biodiversity refers to the variety of life at genetic,
+species and ecosystem levels. Ecosystems contain
+interacting organisms and their physical environments.
+Energy flows through food chains and food webs,
+while nutrients move through natural cycles.
+</p>
+
+<p>
+Forests, wetlands, grasslands, coral reefs and oceans
+provide important ecological services. These include
+pollination, water purification, soil formation,
+carbon storage and habitat protection.
+</p>
+
+<h4>5. Natural Resources</h4>
+
+<p>
+Natural resources include water, soil, forests,
+minerals, sunlight and fossil fuels. Some resources
+are renewable when managed sustainably, while others
+exist in limited quantities and cannot be replaced
+on human timescales.
+</p>
+
+<p>
+Sustainable resource management aims to balance
+economic development with environmental protection.
+Efficient energy use, recycling, conservation and
+responsible land management can reduce pressure
+on natural systems.
+</p>
+
+<h4>6. Sustainable Development</h4>
+
+<p>
+Sustainable development seeks to improve human
+well-being while protecting the ability of future
+generations to meet their needs. It connects economic
+opportunity, social inclusion and environmental
+responsibility.
+</p>
+
+<p>
+The United Nations Sustainable Development Goals
+provide an international framework addressing
+poverty, education, health, clean energy, equality,
+responsible consumption and environmental protection.
+</p>
+
+<h3>DAY 5: ECONOMICS, FINANCE AND GLOBAL TRADE</h3>
+
+<h4>1. Basic Economic Principles</h4>
+
+<p>
+Economics studies how individuals, businesses and
+governments make decisions about limited resources.
+Because resources are scarce and human wants are
+numerous, economic decisions involve trade-offs.
+The value of the next best alternative sacrificed
+is called opportunity cost.
+</p>
+
+<p>
+Microeconomics examines individual consumers,
+firms and markets. Macroeconomics studies the
+economy as a whole, including inflation, unemployment,
+economic growth and national income.
+</p>
+
+<h4>2. Supply and Demand</h4>
+
+<p>
+Demand represents the quantity of a good or service
+that consumers are willing and able to purchase
+at different prices. Supply represents the quantity
+that producers are willing and able to offer.
+</p>
+
+<p>
+The interaction of supply and demand helps determine
+market prices and quantities. Changes in income,
+consumer preferences, production costs, technology
+and government policies can influence market outcomes.
+</p>
+
+<h4>3. Gross Domestic Product</h4>
+
+<p>
+Gross Domestic Product, commonly called GDP, measures
+the market value of final goods and services produced
+within a country's borders during a specified period.
+It is an important indicator of economic activity.
+</p>
+
+<p>
+GDP can be measured through production, income or
+expenditure approaches. However, GDP does not fully
+measure income distribution, environmental quality,
+unpaid work or every aspect of human well-being.
+</p>
+
+<h4>4. Inflation and Monetary Policy</h4>
+
+<p>
+Inflation refers to a sustained increase in the general
+price level of goods and services. When prices rise,
+the purchasing power of money decreases.
+Inflation can result from strong demand, increased
+production costs or other economic factors.
+</p>
+
+<p>
+Central banks use monetary policy tools to influence
+financial conditions and maintain price stability.
+Interest rates are an important instrument because
+they affect borrowing, saving, investment and spending.
+</p>
+
+<h4>5. Banking and Financial Systems</h4>
+
+<p>
+Banks provide services such as deposits, loans,
+payments and financial intermediation. They connect
+savers with borrowers and support economic activity.
+The financial system also includes insurance companies,
+stock markets, bond markets and other institutions.
+</p>
+
+<p>
+In India, the Reserve Bank of India performs central
+banking functions, including monetary policy,
+currency management and regulation of important
+parts of the banking system.
+</p>
+
+<h4>6. International Trade</h4>
+
+<p>
+International trade involves the exchange of goods
+and services between countries. Countries participate
+in trade because they differ in resources, technology,
+skills, production costs and economic capabilities.
+</p>
+
+<p>
+Comparative advantage explains how countries can
+benefit from specializing in activities with lower
+opportunity costs. International trade can increase
+market access and efficiency, but its benefits and
+costs may be distributed unevenly.
+</p>
+
+<h3>DAY 6: PSYCHOLOGY, PHILOSOPHY AND HUMAN BEHAVIOUR</h3>
+
+<h4>1. Introduction to Psychology</h4>
+
+<p>
+Psychology is the scientific study of behaviour and
+mental processes. It examines how people think,
+feel, learn, remember, communicate and interact
+with their surroundings.
+</p>
+
+<p>
+Different psychological perspectives emphasize
+different explanations of behaviour. Biological
+approaches examine the brain and nervous system.
+Cognitive approaches investigate mental processes,
+while social psychology studies the influence
+of other people and social situations.
+</p>
+
+<h4>2. Memory and Learning</h4>
+
+<p>
+Memory involves encoding, storing and retrieving
+information. Sensory memory briefly retains
+incoming information, working memory supports
+temporary processing, and long-term memory stores
+information over extended periods.
+</p>
+
+<p>
+Learning can occur through observation, practice,
+feedback and experience. Distributed practice,
+active recall and meaningful connections can
+improve the retention of information.
+</p>
+
+<h4>3. Human Motivation</h4>
+
+<p>
+Motivation refers to the processes that initiate,
+direct and maintain behaviour. People may act
+because of internal interests, personal goals,
+social expectations or external rewards.
+</p>
+
+<p>
+Motivation is influenced by biological needs,
+emotions, beliefs, expectations and environmental
+conditions. Understanding motivation can improve
+education, leadership, personal development
+and workplace management.
+</p>
+
+<h4>4. Critical Thinking</h4>
+
+<p>
+Critical thinking involves examining information
+carefully, evaluating evidence and identifying
+logical relationships. It requires distinguishing
+between facts, interpretations, assumptions
+and unsupported claims.
+</p>
+
+<p>
+Common reasoning errors include confirmation bias,
+hasty generalization and false cause assumptions.
+Reliable reasoning requires considering alternative
+explanations and evaluating the quality of evidence.
+</p>
+
+<h4>5. Introduction to Philosophy</h4>
+
+<p>
+Philosophy investigates fundamental questions
+about existence, knowledge, morality, reasoning
+and human experience. It encourages people to
+examine assumptions and develop logically
+consistent arguments.
+</p>
+
+<p>
+Epistemology studies knowledge and justified belief.
+Metaphysics investigates the nature of reality.
+Ethics examines questions about right and wrong,
+while political philosophy considers justice,
+rights, freedom and authority.
+</p>
+
+<h4>6. Ethics and Decision-Making</h4>
+
+<p>
+Ethics provides frameworks for evaluating human
+actions. Consequentialist approaches consider
+the outcomes of actions, while deontological
+approaches emphasize duties, rules and principles.
+Virtue ethics focuses on character and moral habits.
+</p>
+
+<p>
+Real-world decisions frequently involve competing
+values and uncertain outcomes. Responsible decision-making
+requires identifying affected individuals, examining
+available evidence and considering both immediate
+and long-term consequences.
+</p>
+
+<h3>DAY 7: SPACE, INTERNATIONAL RELATIONS AND THE FUTURE</h3>
+
+<h4>1. The Solar System</h4>
+
+<p>
+The Solar System consists of the Sun and the objects
+gravitationally bound to it. These include eight
+recognized planets, dwarf planets, moons, asteroids,
+comets and smaller bodies.
+</p>
+
+<p>
+The inner planets are Mercury, Venus, Earth and Mars.
+They are primarily rocky. The outer planets include
+Jupiter, Saturn, Uranus and Neptune, which are
+much larger and contain substantial amounts
+of gas or ice.
+</p>
+
+<h4>2. Stars and Galaxies</h4>
+
+<p>
+Stars are massive astronomical objects that produce
+energy through nuclear fusion in their interiors.
+The Sun is the closest star to Earth and provides
+most of the energy supporting life on our planet.
+</p>
+
+<p>
+Galaxies contain stars, gas, dust and dark matter
+held together by gravity. The Milky Way is the
+galaxy containing our Solar System. Astronomers
+study distant galaxies to understand the structure
+and evolution of the universe.
+</p>
+
+<h4>3. Space Exploration</h4>
+
+<p>
+Space exploration uses satellites, telescopes,
+robotic spacecraft and human missions to investigate
+objects beyond Earth's atmosphere. Satellites support
+communication, navigation, weather forecasting
+and scientific observation.
+</p>
+
+<p>
+Robotic missions have explored the Moon, Mars,
+asteroids and outer planets. Space agencies also
+study the possibility of future human exploration,
+including technologies for life support, propulsion
+and protection from radiation.
+</p>
+
+<h4>4. International Relations</h4>
+
+<p>
+International relations examines how countries
+and other global actors interact. Major issues
+include diplomacy, international security,
+economic cooperation, human rights and global
+environmental challenges.
+</p>
+
+<p>
+International organizations provide platforms
+for negotiation and cooperation. The United Nations
+was established in 1945 with the aim of promoting
+international peace, security and cooperation.
+</p>
+
+<h4>5. Democracy and Governance</h4>
+
+<p>
+Democracy is a political system in which public
+authority is connected to the participation
+and consent of citizens. Democratic systems
+commonly include elections, political representation,
+public debate and legal protections.
+</p>
+
+<p>
+Good governance involves transparency,
+accountability, effective institutions,
+the rule of law and public participation.
+Constitutional systems establish the framework
+within which government powers are exercised.
+</p>
+
+<h4>6. Future of Humanity</h4>
+
+<p>
+Humanity faces major opportunities and challenges
+in the coming decades. Artificial intelligence,
+biotechnology, renewable energy, automation
+and advanced materials may transform production,
+healthcare, communication and education.
+</p>
+
+<p>
+Technological progress also raises questions
+about privacy, employment, inequality, safety
+and the concentration of power. The benefits
+of innovation depend partly on how societies
+develop laws, institutions and responsible
+systems of oversight.
+</p>
+
+<h4>7. The Future of Education</h4>
+
+<p>
+Education is increasingly influenced by digital
+technology, global communication and access
+to online resources. Digital platforms can
+support personalized learning, remote education
+and collaboration across geographical boundaries.
+</p>
+
+<p>
+However, technology cannot replace every
+aspect of education. Human guidance, critical
+discussion, practical experience and social
+interaction remain important. Future education
+systems will need to combine technological
+resources with strong teaching and independent
+thinking.
+</p>
+
+<h2>END OF SEVEN-DAY READING LIBRARY</h2>
+
+<p>
+This reading collection introduces major themes
+across different academic disciplines. Each topic
+can be explored further through textbooks,
+scientific publications, historical documents,
+government reports and reliable educational sources.
+</p>
+
+</div>
+
+
+<!-- RIGHT SIDE AUTOMATIC WRITING PANEL -->
+
+<div class="right">
+
+    <h2>My Personal Notes</h2>
+
+    <div class="page-controls">
+
+        <button id="prevPage">← Previous</button>
+
+        <span id="pageNumber">Page 1</span>
+
+        <button id="nextPage">Next →</button>
+
+    </div>
+
+    <div id="pagesContainer"></div>
+
+    <div id="status">
+        Your notes are saved automatically.
+    </div>
+
+</div>
+
+</div>
+
+
+<script>
+
+// LEFT SIDE COPY PROTECTION
+
+const leftPanel = document.getElementById("reading");
+
+leftPanel.addEventListener("contextmenu", e => e.preventDefault());
+leftPanel.addEventListener("copy", e => e.preventDefault());
+leftPanel.addEventListener("cut", e => e.preventDefault());
+leftPanel.addEventListener("dragstart", e => e.preventDefault());
+leftPanel.addEventListener("selectstart", e => e.preventDefault());
+
+leftPanel.addEventListener("keydown", function(e) {
+
+    if ((e.ctrlKey || e.metaKey) &&
+        ["c", "x", "a", "s", "p", "u"].includes(e.key.toLowerCase())) {
+
+        e.preventDefault();
+    }
+
+});
+
+
+// MULTI-PAGE WRITING SYSTEM
+
+const container = document.getElementById("pagesContainer");
+
+const pageNumber = document.getElementById("pageNumber");
+
+const status = document.getElementById("status");
+
+const STORAGE_KEY = "myKnowledgePages";
+
+let currentPage = 0;
+
+let isProcessing = false;
+
+
+// CREATE A NEW PAGE
+
+function createPage(content = "") {
+
+    const page = document.createElement("div");
+
+    page.className = "note-page";
+
+    page.contentEditable = "true";
+
+    page.spellcheck = true;
+
+    page.textContent = content;
+
+    return page;
+
+}
+
+
+// ADD PAGE
+
+function addPage(content = "") {
+
+    const page = createPage(content);
+
+    container.appendChild(page);
+
+    return page;
+
+}
+
+
+// SAVE ALL PAGES
+
+function saveNotes() {
+
+    try {
+
+        const pages = Array.from(container.children).map(
+            page => page.textContent
+        );
+
+        localStorage.setItem(
+            STORAGE_KEY,
+            JSON.stringify(pages)
+        );
+
+        status.textContent = "Notes saved automatically.";
+
+    } catch (error) {
+
+        status.textContent = "Could not save notes.";
+
+    }
+
+}
+
+
+// UPDATE PAGE DISPLAY
+
+function updatePageDisplay() {
+
+    const allPages = container.children;
+
+    currentPage = Math.max(
+        0,
+        Math.min(currentPage, allPages.length - 1)
+    );
+
+    Array.from(allPages).forEach((page, index) => {
+
+        page.style.display =
+            index === currentPage ? "block" : "none";
+
+    });
+
+    pageNumber.textContent =
+        `Page ${currentPage + 1} of ${allPages.length}`;
+
+    document.getElementById("prevPage").disabled =
+        currentPage === 0;
+
+    document.getElementById("nextPage").disabled =
+        currentPage === allPages.length - 1;
+
+}
+
+
+// FIND THE TEXT THAT FITS ON A PAGE
+
+function findFittingLength(page, content) {
+
+    let low = 0;
+
+    let high = content.length;
+
+    while (low < high) {
+
+        const mid = Math.ceil((low + high) / 2);
+
+        page.textContent = content.substring(0, mid);
+
+        if (page.scrollHeight <= page.clientHeight) {
+
+            low = mid;
+
+        } else {
+
+            high = mid - 1;
+
+        }
+
+    }
+
+    // Avoid splitting a word when possible.
+
+    if (low < content.length) {
+
+        const space = content.lastIndexOf(" ", low);
+
+        if (space > low * 0.7) {
+
+            low = space;
+
+        }
+
+    }
+
+    return low;
+
+}
+
+
+// AUTOMATIC OVERFLOW HANDLING
+
+function handleOverflow(index) {
+
+    if (isProcessing) return;
+
+    const page = container.children[index];
+
+    if (!page) return;
+
+    if (page.scrollHeight <= page.clientHeight) return;
+
+    isProcessing = true;
+
+    const content = page.textContent;
+
+    const splitAt = findFittingLength(page, content);
+
+    if (splitAt <= 0) {
+
+        isProcessing = false;
+
+        status.textContent =
+            "Text is too large to fit. Try reducing font size.";
+
+        return;
+
+    }
+
+    const firstPart = content.substring(0, splitAt);
+
+    const remaining = content.substring(splitAt);
+
+    page.textContent = firstPart;
+
+    let nextPage = container.children[index + 1];
+
+    if (!nextPage) {
+
+        nextPage = addPage();
+
+    }
+
+    nextPage.textContent =
+        remaining + nextPage.textContent;
+
+    saveNotes();
+
+    currentPage = index + 1;
+
+    updatePageDisplay();
+
+    isProcessing = false;
+
+    requestAnimationFrame(() => {
+
+        handleOverflow(index + 1);
+
+        const activePage = container.children[currentPage];
+
+        if (activePage) {
+
+            activePage.focus();
+
+            const selection = window.getSelection();
+
+            const range = document.createRange();
+
+            range.selectNodeContents(activePage);
+
+            range.collapse(false);
+
+            selection.removeAllRanges();
+
+            selection.addRange(range);
+
+        }
+
+        updatePageDisplay();
+
+        saveNotes();
+
+    });
+
+}
+
+
+// HANDLE USER TYPING
+
+container.addEventListener("input", function(e) {
+
+    const page = e.target;
+
+    if (!page.classList.contains("note-page")) return;
+
+    currentPage = Array.from(container.children).indexOf(page);
+
+    saveNotes();
+
+    if (page.scrollHeight > page.clientHeight) {
+
+        handleOverflow(currentPage);
+
+    }
+
+    updatePageDisplay();
+
+});
+
+
+// NEXT PAGE
+
+document.getElementById("nextPage").addEventListener("click", function() {
+
+    if (currentPage < container.children.length - 1) {
+
+        currentPage++;
+
+        updatePageDisplay();
+
+        container.children[currentPage].focus();
+
+    }
+
+});
+
+
+// PREVIOUS PAGE
+
+document.getElementById("prevPage").addEventListener("click", function() {
+
+    if (currentPage > 0) {
+
+        currentPage--;
+
+        updatePageDisplay();
+
+        container.children[currentPage].focus();
+
+    }
+
+});
+
+
+// LOAD SAVED NOTES
+
+function loadNotes() {
+
+    try {
+
+        const saved = JSON.parse(
+            localStorage.getItem(STORAGE_KEY) || "[]"
+        );
+
+        if (Array.isArray(saved) && saved.length > 0) {
+
+            saved.forEach(content => {
+
+                addPage(
+                    typeof content === "string" ? content : ""
+                );
+
+            });
+
+        } else {
+
+            addPage();
+
+        }
+
+    } catch (error) {
+
+        addPage();
+
+        status.textContent =
+            "Starting a new notes document.";
+
+    }
+
+    currentPage = 0;
+
+    updatePageDisplay();
+
+}
+
+
+// START WEBSITE
+
+loadNotes();
+
+</script>
+
+</body>
+</html>
